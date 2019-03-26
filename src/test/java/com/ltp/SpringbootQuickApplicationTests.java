@@ -18,13 +18,17 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class SpringbootQuickApplicationTests {
     @Autowired
     Person person;
+    @Autowired
+    ApplicationContext ioc;
+
     @Test
     public void contextLoads() {
         System.out.println(person);
     }
     @Test
-    public void beanTese(){
-
+    public void beanTest(){
+        //判断容器中是否存在hello
+        boolean b = ioc.containsBean("hello");
+        System.out.println(b);
     }
-
 }

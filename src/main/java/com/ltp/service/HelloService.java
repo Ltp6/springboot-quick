@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ImportResource;
  * @Date: 19-3-25 下午2:12
  * @Description:
  */
-@ImportResource(value = {"classpath:bean.xml"})
+
 public class HelloService {
 
 }

@@ -1,15 +1,16 @@
 server:
   port: 8081
+spring:
+  profiles:
+    active: test
+---
+server:
+  port: 8088
 
-#person:
-#  lastname: lisi
-#  age: 18
-#  boss: false
-#  birth: 2019/03/21
-#  maps: {k1: v1,k2: v2}
-#  lists:
-#  - zhangsan
-#  - wangwu
-#  dog:
-#    name: 小狗
-#    age: 5
+spring:
+  profiles: dev
+---
+server:
+     port: 8000
+spring:
+  profiles: test
